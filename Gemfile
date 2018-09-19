@@ -60,3 +60,17 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem 'webpacker'
+gem 'opal-sprockets', '~> 0.4.2.0.11.0.3.1'
+gem 'opal-jquery', git: 'https://github.com/opal/opal-jquery.git', branch: 'master'
+gem 'hyperloop', github: 'hyperstack-org/hyperstack', branch: 'hyperloop-legacy', glob: 'ruby/*/*.gemspec'
+gem 'hyper-react', github: 'hyperstack-org/hyperstack', branch: 'hyperloop-legacy', glob: 'ruby/*/*.gemspec'
+gem 'hyper-component', github: 'hyperstack-org/hyperstack', branch: 'hyperloop-legacy', glob: 'ruby/*/*.gemspec'
+gem 'hyper-router', github: 'hyperstack-org/hyperstack', branch: 'hyperloop-legacy', glob: 'ruby/*/*.gemspec'
+gem 'hyper-store', github: 'hyperstack-org/hyperstack', branch: 'hyperloop-legacy', glob: 'ruby/*/*.gemspec'
+gem 'hyperloop-config', github: 'hyperstack-org/hyperstack', branch: 'hyperloop-legacy', glob: 'ruby/*/*.gemspec'
+gem 'opal_hot_reloader', git: 'https://github.com/fkchang/opal-hot-reloader.git'
+group :development do
+  gem 'foreman'
+end
